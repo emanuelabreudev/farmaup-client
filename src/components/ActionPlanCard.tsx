@@ -57,7 +57,7 @@ export function ActionPlanCard({
         <div className="flex-1 space-y-2">
           <div className="flex flex-wrap items-start justify-between gap-2">
             <h4
-              className={`text-neutral-900 ${
+              className={`text-lg font-medium text-neutral-900 ${
                 isCompleted ? "line-through" : ""
               }`}
             >

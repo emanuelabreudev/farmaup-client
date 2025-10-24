@@ -33,7 +33,9 @@ export function DiagnosticCard({
             <AlertCircle className="w-5 h-5 text-brand-red mt-1 flex-shrink-0" />
             <div className="flex-1">
               <div className="flex flex-wrap items-center gap-2 mb-2">
-                <h3 className="text-neutral-900">{title}</h3>
+                <h3 className="text-xl font-semibold text-neutral-900">
+                  {title}
+                </h3>
                 <Badge
                   variant="outline"
                   className={`${priorityColors[priority]} border`}

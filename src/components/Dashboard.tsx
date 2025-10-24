@@ -180,7 +180,9 @@ export function Dashboard({ onNavigate }: DashboardProps) {
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-8">
           <div>
-            <h1 className="text-3xl lg:text-4xl mb-2">Dashboard</h1>
+            <h1 className="text-3xl lg:text-4xl font-bold text-neutral-900 mb-2">
+              Dashboard
+            </h1>
             <p className="text-neutral-700">
               Visão geral da sua farmácia com insights acionáveis
             </p>
@@ -210,7 +212,9 @@ export function Dashboard({ onNavigate }: DashboardProps) {
         {/* Charts */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           <Card className="p-6 bg-white">
-            <h3 className="mb-6">Evolução de Faturamento (R$ mil)</h3>
+            <h3 className="text-xl font-semibold text-neutral-900 mb-6">
+              Evolução de Faturamento (R$ mil)
+            </h3>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={salesChartData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
@@ -229,7 +233,9 @@ export function Dashboard({ onNavigate }: DashboardProps) {
           </Card>
 
           <Card className="p-6 bg-white">
-            <h3 className="mb-6">Taxa de Conversão Semanal (%)</h3>
+            <h3 className="text-xl font-semibold text-neutral-900 mb-6">
+              Taxa de Conversão Semanal (%)
+            </h3>
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={conversionChartData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
@@ -264,7 +270,7 @@ export function Dashboard({ onNavigate }: DashboardProps) {
           <TabsContent value="diagnostico" className="space-y-6">
             <div className="flex items-center justify-between mb-4">
               <div>
-                <h2 className="text-2xl lg:text-3xl mb-2">
+                <h2 className="text-2xl lg:text-3xl font-bold text-neutral-900 mb-2">
                   Diagnóstico Priorizado
                 </h2>
                 <p className="text-neutral-700">
@@ -288,7 +294,9 @@ export function Dashboard({ onNavigate }: DashboardProps) {
           <TabsContent value="plano" className="space-y-6">
             <div className="flex items-center justify-between mb-4">
               <div>
-                <h2 className="text-2xl lg:text-3xl mb-2">Plano de Ação</h2>
+                <h2 className="text-2xl lg:text-3xl font-bold text-neutral-900 mb-2">
+                  Plano de Ação
+                </h2>
                 <p className="text-neutral-700">
                   {actionPlans.filter((a) => a.status === "concluída").length}{" "}
                   de {actionPlans.length} ações concluídas
@@ -309,7 +317,9 @@ export function Dashboard({ onNavigate }: DashboardProps) {
             <Card className="p-6 bg-white border-brand-red">
               <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                 <div>
-                  <h3 className="mb-2">Precisa de ajuda para executar?</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-2">
+                    Precisa de ajuda para executar?
+                  </h3>
                   <p className="text-neutral-700">
                     Nossa equipe pode te auxiliar a implementar estas ações
                   </p>

@@ -29,7 +29,9 @@ export function KPICard({
       </div>
 
       <div className="space-y-1">
-        <p className="text-neutral-700">{title}</p>
+        <p className="text-sm font-medium text-neutral-700 uppercase tracking-wide">
+          {title}
+        </p>
         <p className="text-3xl text-neutral-900">{value}</p>
         <div className="flex items-center gap-2">
           <span className={`${isPositive ? "text-green-600" : "text-red-600"}`}>

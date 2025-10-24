@@ -14,7 +14,7 @@ import {
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
-import logoImg from "../assets/farmup-logo-sem-fundo.png";
+import logoImg from "../assets/farmup-logo.png";
 
 interface LandingProps {
   onNavigate: (page: string) => void;
@@ -106,7 +106,7 @@ export function Landing({ onNavigate }: LandingProps) {
           </div>
 
           <div className="space-y-4">
-            <h1 className="text-4xl lg:text-6xl text-neutral-900">
+            <h1 className="text-4xl lg:text-6xl font-bold text-neutral-900">
               Do diagnóstico à ação:{" "}
               <span className="text-brand-red">inteligência que eleva</span>,
               ações que transformam
@@ -153,7 +153,7 @@ export function Landing({ onNavigate }: LandingProps) {
       <section className="bg-white py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl lg:text-5xl text-neutral-900 mb-4">
+            <h2 className="text-3xl lg:text-5xl font-bold text-neutral-900 mb-4">
               Desafios que toda farmácia enfrenta
             </h2>
             <p className="text-xl text-neutral-700">
@@ -174,7 +174,7 @@ export function Landing({ onNavigate }: LandingProps) {
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl lg:text-5xl text-neutral-900 mb-4">
+            <h2 className="text-3xl lg:text-5xl font-bold text-neutral-900 mb-4">
               Nosso método em 4 passos
             </h2>
             <p className="text-xl text-neutral-700">
@@ -194,7 +194,7 @@ export function Landing({ onNavigate }: LandingProps) {
       <section className="bg-white py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto bg-gradient-to-br from-brand-red to-red-600 rounded-2xl p-8 lg:p-12 text-center text-white shadow-2xl">
-            <h2 className="text-3xl lg:text-5xl mb-4">
+            <h2 className="text-3xl lg:text-5xl font-bold mb-4">
               Pronto para transformar sua farmácia?
             </h2>
             <p className="text-xl mb-8 opacity-95">

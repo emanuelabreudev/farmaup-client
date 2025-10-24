@@ -19,7 +19,7 @@ export function PainPointCard({
           <Icon className="w-8 h-8 text-brand-red" />
         </div>
         <div className="space-y-2">
-          <h3 className="text-neutral-900">{title}</h3>
+          <h3 className="text-xl font-semibold text-neutral-900">{title}</h3>
           <p className="text-neutral-700">{description}</p>
         </div>
       </div>
